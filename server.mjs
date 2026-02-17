@@ -18,7 +18,7 @@ if (!process.env.GROQ_API_KEY) {
 const API_KEY = process.env.GROQ_API_KEY;
 
 app.post("/get-hint", async (req, res) => {
-  const { questionName } = req.body;
+  const { questionName, level } = req.body;
 
   if (!questionName) {
     return res.status(400).json({ error: "No question name provided" });
@@ -26,6 +26,20 @@ app.post("/get-hint", async (req, res) => {
 
   try {
     const formattedQuestion = questionName.split("-").join(" ");
+
+    // Default level = 1 if not provided
+    const hintLevel = level || 1;
+
+    // 🔥 Multi-level instruction logic
+    let instruction = "";
+
+    if (hintLevel === 1) {
+      instruction = "Give a very subtle and vague hint.";
+    } else if (hintLevel === 2) {
+      instruction = "Give a clearer but still incomplete hint.";
+    } else {
+      instruction = "Give a strong hint but never reveal the full solution.";
+    }
 
     const response = await fetch(
       "https://api.groq.com/openai/v1/chat/completions",
@@ -41,11 +55,11 @@ app.post("/get-hint", async (req, res) => {
             {
               role: "system",
               content:
-                "You are a coding mentor. Give short hints only, never full solutions.",
+                "You are a coding mentor. Never reveal full solutions.",
             },
             {
               role: "user",
-              content: `Give a 6-word hint for solving the LeetCode problem "${formattedQuestion}".`,
+              content: `${instruction} For the LeetCode problem "${formattedQuestion}". Keep it short (max 8 words).`,
             },
           ],
           temperature: 0.7,

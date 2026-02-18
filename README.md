@@ -5,6 +5,10 @@ The extension uses a Node.js backend integrated with the Groq LLM API to generat
 
 ---
 
+## Working Demo
+
+https://github.com/user-attachments/assets/6eded783-6d65-426f-b28c-4bde4d3026a7
+
 ## ✨ Features
 
 - Automatically detects the LeetCode problem name from the active tab.

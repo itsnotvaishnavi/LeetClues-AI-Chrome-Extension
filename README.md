@@ -85,8 +85,3 @@ Each click on **Get Hint** provides a progressively stronger hint.
 - RESTful API Integration
 
 ---
-
-## 👩‍💻 Author
-
-Vaishnavi Choudha  
-GitHub: https://github.com/itsnotvaishnavi

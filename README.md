@@ -12,11 +12,13 @@ https://github.com/user-attachments/assets/a6864d24-57a1-4907-b30d-15944e456edb
 
 ## ✨ Features
 
-- 🔍 Automatically detects the LeetCode problem from the active tab
-- 🧠 Generates progressive hints (Hint 1 → Hint 2 → Hint 3)
-- ⚡ Uses Groq LLM API for fast real-time inference
-- 🎨 Clean, modern, and responsive popup UI
-- 🔒 Ensures solutions are never fully revealed
+- 🔍 **Problem Detection:** Automatically detects the LeetCode problem from the active tab.
+- 🧠 **Progressive Hint System:** Generates progressive hints (Hint 1 → Hint 2 → Hint 3) with alternative and optimized approaches at advanced levels.
+- 🤖 **Auto-Mentor & Code Analysis:** Extracts code directly from the LeetCode editor or popup to analyze your progress and logic gaps.
+- 🕒 **Idle Tracking:** A non-intrusive floating AI mentor automatically appears with guidance if you're stuck for a set period of time.
+- 💡 **Reveal Solution:** Clears hint history and explicitly shows the final solution when requested.
+- 📚 **Learning Resources:** Direct integration with GeeksforGeeks to explore topics further.
+- ⚡ **Lightning Fast:** Uses Groq LLM API (`llama-3.1-8b-instant`) for fast real-time inference.
 
 ---
 
@@ -70,10 +72,10 @@ node server.mjs
 
 ## 💡 How It Works
 
-1. Open any LeetCode problem in your browser
-2. Click the **LeetClues** extension icon
-3. Click **Get Hint**
-4. Each click provides a progressively stronger hint — without spoiling the solution
+1. **Auto Tracking**: Open any LeetCode problem. The Auto-Mentor will run in the background. If you're stuck for 15 seconds, a floating AI mentor will analyze your code and provide guidance natively on the page.
+2. **Manual Hints**: Click the **LeetClues** extension icon and click **Get Hint** or paste your code for instant, progressive feedback.
+3. **Progressive System**: Each click provides a progressively stronger hint. Advanced levels show alternative and optimized approaches.
+4. **Reveal Solution**: If you're absolutely stuck, use the "Reveal Solution" feature to clear your history and get the final answer.
 
 ---
 

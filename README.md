@@ -6,7 +6,7 @@ LeetClues is a Chrome extension that provides progressive AI-generated hints for
 
 ## 🎥 Demo
 
-https://github.com/user-attachments/assets/a6864d24-57a1-4907-b30d-15944e456ed
+https://github.com/user-attachments/assets/a6864d24-57a1-4907-b30d-15944e456edb
 
 
 

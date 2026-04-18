@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LeetClues</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1 class="title">LeetClues AI</h1>
+    <div id="problem-type">Loading...</div>
+  </div>
+
+  <div id="suggestion-box">Need help? Get a hint 💡</div>
+
+  <a href="#" id="gfg-link" target="_blank">📚 Learn More (GeeksforGeeks)</a>
+
+  <button class="btn" id="get-hint-button">Get Hint 1</button>
+  <button class="btn" id="reveal-solution-button">Reveal Solution</button>
+  
+  <div class="code-analysis-section">
+    <textarea id="user-code" placeholder="Write or paste your code here..."></textarea>
+  </div>
+
+  <button class="btn" id="reset-button">Reset Hints</button>
+
+  <div id="loading">✨ Generating AI response...</div>
+
+  <div id="history-container">
+    <!-- Hints will be injected here -->
+  </div>
+
+  <div id="code-feedback">
+    <!-- Code Feedback will be injected here -->
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

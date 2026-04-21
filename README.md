@@ -1,4 +1,4 @@
-# 🚀 LeetClues — AI-Powered Progressive Coding Hint Extension
+# 🚀 LeetClues -AI-Powered Progressive Coding Hint Extension
 
 LeetClues is a Chrome extension that provides progressive AI-generated hints for LeetCode problems **without revealing full solutions**. It uses a Node.js backend integrated with the Groq LLM API to generate contextual hints in real-time.
 
